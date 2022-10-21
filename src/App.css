@@ -1,38 +1,108 @@
-.App {
+:root {
+  /*main home page*/
+--black-color-1:#35393C;
+--text-color:#F2FDFF;
+/*fonts to use*/
+--text-style:'finlandica', sans-serif;
+--text-weight:2rem;
+ }
+body{
+margin: 0px;
+padding: 0px;
+box-sizing: content-box;
+max-height: 1300vh;
+max-width: 1300vw;
+ }
+ .nav{
+  position: static;
+  display: flex;
+  background-color: var(--black-color-1); 
+  flex-direction: row;
+  justify-content: flex-start; 
+}
+.nav-log{
+  margin-top: 5px;
+  margin-left: 5px;
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
+}
+.nav-menu{
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+}
+ul, li{
+position: relative;
+left: 100px;
+right: 100px;
+margin: 0px 20px 0px 20px;
+padding: 0px;
+display: flex;
+flex-direction: row;
+align-self: center;
+justify-content: space-around;
+}
+#items{
+  color: white;
+  margin: 0px;
+  padding-top: 10px;
+  white-space: nowrap;
   text-align: center;
+  text-decoration: none;
+  font-family: var(--text-style);
+  font-weight: 300;
+  font-size: 21px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#items:hover{
+  transition: 1s;
+cursor: pointer;
+opacity: 50%;
+text-decoration: underline;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#main_id{
+  margin: auto;
+  padding: auto;
+  background-color: var(--black-color-1);
+  background-size: cover;
+  padding: auto;
+  display: flex;
+  flex-direction: row;
+  height: 590px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.front_text{
+  position: relative;
+  left: -105px;
+  width: 25%;
+  margin: 0px 200px 0px 200px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-self: center;
+  font-family: var(--text-style);
+  line-height: 25px;
+}
+.main_greetings{
+  line-height: 55px;
+margin: 0px;
+padding: 0px;
+font-size: 50px;
+white-space: nowrap;
+color:white;
+}
+.paragraph-text{
+  margin: 0px 95px 0px 95px;
+  padding: auto;
   color: white;
+  white-space: nowrap;
+  line-height: 50px;
+  font-size: 30px;
 }
+.front_image{
+  position: relative;
+  left: 3%;
+  bottom: 10%;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 200px;
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
